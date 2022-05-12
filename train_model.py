@@ -19,6 +19,12 @@ if __name__ == '__main__':
     dump(model, './outputs/model.joblib')
     predictions = model_predictions(X_test, model)
     accuracy,precision, recall, f1 = compute_metrics(y_test, predictions)
-    
+    model_scores = []
+    scores = "accuracy: %s " "precision: %s " \
+        "recall: %s f1: %s" % (accuracy,precision, recall, f1)
+    model_scores.append(scores)
+    with open('./outputs/model_metrics.txt', 'w') as out:
+        for score in model_scores:
+            out.write(score)
 
 

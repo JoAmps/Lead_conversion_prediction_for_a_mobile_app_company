@@ -32,8 +32,8 @@ def test_process_train(data):
     Check train data has same number of rows for X and y
     """
     train, _=split_data(data)
-    X_res,y_res= preprocess_data(train)
-    assert X_res.shape[0] == y_res.shape[0]   
+    X_train,y_train= preprocess_data(train)
+    assert X_train.shape[0] == y_train.shape[0]   
 
 def test_process_test(data):
     """
