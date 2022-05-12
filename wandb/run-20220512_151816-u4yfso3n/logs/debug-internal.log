@@ -1,0 +1,173 @@
+2022-05-12 15:18:16,845 INFO    MainThread:87299 [internal.py:wandb_internal():90] W&B internal server running at pid: 87299, started at: 2022-05-12 15:18:16.844945
+2022-05-12 15:18:16,845 INFO    WriterThread:87299 [datastore.py:open_for_write():75] open: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/run-u4yfso3n.wandb
+2022-05-12 15:18:16,846 DEBUG   SenderThread:87299 [sender.py:send():232] send: header
+2022-05-12 15:18:16,846 DEBUG   SenderThread:87299 [sender.py:send():232] send: run
+2022-05-12 15:18:17,500 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: check_version
+2022-05-12 15:18:17,503 INFO    SenderThread:87299 [dir_watcher.py:__init__():197] watching files in: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files
+2022-05-12 15:18:17,503 INFO    SenderThread:87299 [sender.py:_start_run_threads():811] run started: u4yfso3n with start time 1652368696
+2022-05-12 15:18:17,503 DEBUG   SenderThread:87299 [sender.py:send():232] send: summary
+2022-05-12 15:18:17,503 INFO    SenderThread:87299 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 15:18:17,503 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: check_version
+2022-05-12 15:18:17,669 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: run_start
+2022-05-12 15:18:17,670 DEBUG   HandlerThread:87299 [meta.py:__init__():35] meta init
+2022-05-12 15:18:17,673 DEBUG   HandlerThread:87299 [meta.py:__init__():49] meta init done
+2022-05-12 15:18:17,673 DEBUG   HandlerThread:87299 [meta.py:probe():209] probe
+2022-05-12 15:18:17,676 DEBUG   HandlerThread:87299 [meta.py:_setup_git():199] setup git
+2022-05-12 15:18:17,697 DEBUG   HandlerThread:87299 [meta.py:_setup_git():206] setup git done
+2022-05-12 15:18:17,697 DEBUG   HandlerThread:87299 [meta.py:_save_pip():53] save pip
+2022-05-12 15:18:17,698 DEBUG   HandlerThread:87299 [meta.py:_save_pip():67] save pip done
+2022-05-12 15:18:17,698 DEBUG   HandlerThread:87299 [meta.py:_save_conda():74] save conda
+2022-05-12 15:18:18,504 INFO    Thread-7  :87299 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/wandb-summary.json
+2022-05-12 15:18:18,505 INFO    Thread-7  :87299 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/conda-environment.yaml
+2022-05-12 15:18:18,505 INFO    Thread-7  :87299 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/requirements.txt
+2022-05-12 15:18:18,561 DEBUG   HandlerThread:87299 [meta.py:_save_conda():84] save conda done
+2022-05-12 15:18:18,562 DEBUG   HandlerThread:87299 [meta.py:probe():247] probe done
+2022-05-12 15:18:18,564 DEBUG   SenderThread:87299 [sender.py:send():232] send: telemetry
+2022-05-12 15:18:18,564 DEBUG   SenderThread:87299 [sender.py:send():232] send: files
+2022-05-12 15:18:18,564 INFO    SenderThread:87299 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-05-12 15:18:18,567 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: stop_status
+2022-05-12 15:18:18,568 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: stop_status
+2022-05-12 15:18:18,945 DEBUG   SenderThread:87299 [sender.py:send():232] send: telemetry
+2022-05-12 15:18:18,945 DEBUG   SenderThread:87299 [sender.py:send():232] send: telemetry
+2022-05-12 15:18:19,512 INFO    Thread-7  :87299 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/conda-environment.yaml
+2022-05-12 15:18:19,512 INFO    Thread-7  :87299 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/output.log
+2022-05-12 15:18:19,513 INFO    Thread-7  :87299 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/wandb-metadata.json
+2022-05-12 15:18:19,967 INFO    Thread-11 :87299 [upload_job.py:push():132] Uploaded file /var/folders/b6/cwdf1l0x4rs4pv03tq2z5dy80000gn/T/tmpotjtqhnawandb/soko09tt-wandb-metadata.json
+2022-05-12 15:18:21,101 DEBUG   SenderThread:87299 [sender.py:send():232] send: exit
+2022-05-12 15:18:21,101 INFO    SenderThread:87299 [sender.py:send_exit():368] handling exit code: 1
+2022-05-12 15:18:21,103 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:21,103 INFO    SenderThread:87299 [sender.py:send_exit():370] handling runtime: 3
+2022-05-12 15:18:21,104 INFO    SenderThread:87299 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 15:18:21,104 INFO    SenderThread:87299 [sender.py:send_exit():376] send defer
+2022-05-12 15:18:21,104 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:21,105 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:21,106 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 0
+2022-05-12 15:18:21,106 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:21,106 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-05-12 15:18:21,106 INFO    SenderThread:87299 [sender.py:transition_state():389] send defer: 1
+2022-05-12 15:18:21,106 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:21,106 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 1
+2022-05-12 15:18:21,523 INFO    Thread-7  :87299 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/wandb-summary.json
+2022-05-12 15:18:21,524 INFO    Thread-7  :87299 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/output.log
+2022-05-12 15:18:21,614 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:21,614 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:21,614 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-05-12 15:18:21,614 INFO    SenderThread:87299 [sender.py:transition_state():389] send defer: 2
+2022-05-12 15:18:21,614 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:21,614 DEBUG   SenderThread:87299 [sender.py:send():232] send: stats
+2022-05-12 15:18:21,615 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:21,615 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 2
+2022-05-12 15:18:21,615 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:21,615 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-05-12 15:18:21,615 INFO    SenderThread:87299 [sender.py:transition_state():389] send defer: 3
+2022-05-12 15:18:21,615 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:21,615 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 3
+2022-05-12 15:18:21,615 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:21,616 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-05-12 15:18:21,616 INFO    SenderThread:87299 [sender.py:transition_state():389] send defer: 4
+2022-05-12 15:18:21,616 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:21,616 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 4
+2022-05-12 15:18:21,616 DEBUG   SenderThread:87299 [sender.py:send():232] send: summary
+2022-05-12 15:18:21,617 INFO    SenderThread:87299 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-05-12 15:18:21,617 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:21,617 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-05-12 15:18:21,617 INFO    SenderThread:87299 [sender.py:transition_state():389] send defer: 5
+2022-05-12 15:18:21,617 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:21,617 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 5
+2022-05-12 15:18:21,617 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:21,617 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-05-12 15:18:21,720 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:22,533 INFO    Thread-7  :87299 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/wandb-summary.json
+2022-05-12 15:18:22,539 INFO    SenderThread:87299 [sender.py:transition_state():389] send defer: 6
+2022-05-12 15:18:22,539 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:22,540 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:22,540 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 6
+2022-05-12 15:18:22,540 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:22,540 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-05-12 15:18:22,540 INFO    SenderThread:87299 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-05-12 15:18:22,646 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:23,533 INFO    Thread-7  :87299 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/config.yaml
+2022-05-12 15:18:23,534 INFO    SenderThread:87299 [dir_watcher.py:finish():342] scan: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files
+2022-05-12 15:18:23,534 INFO    SenderThread:87299 [dir_watcher.py:finish():356] scan save: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/requirements.txt requirements.txt
+2022-05-12 15:18:23,534 INFO    SenderThread:87299 [dir_watcher.py:finish():356] scan save: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/output.log output.log
+2022-05-12 15:18:23,535 INFO    SenderThread:87299 [dir_watcher.py:finish():356] scan save: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/config.yaml config.yaml
+2022-05-12 15:18:23,537 INFO    SenderThread:87299 [dir_watcher.py:finish():356] scan save: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/wandb-summary.json wandb-summary.json
+2022-05-12 15:18:23,539 INFO    SenderThread:87299 [dir_watcher.py:finish():356] scan save: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/conda-environment.yaml conda-environment.yaml
+2022-05-12 15:18:23,540 INFO    SenderThread:87299 [dir_watcher.py:finish():356] scan save: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/wandb-metadata.json wandb-metadata.json
+2022-05-12 15:18:23,540 INFO    SenderThread:87299 [sender.py:transition_state():389] send defer: 7
+2022-05-12 15:18:23,540 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:23,540 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:23,540 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 7
+2022-05-12 15:18:23,541 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:23,541 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-05-12 15:18:23,541 INFO    SenderThread:87299 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-12 15:18:23,642 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:23,643 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:23,748 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:23,748 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:23,851 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:23,851 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:23,955 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:23,955 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:24,056 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:24,056 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:24,161 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:24,162 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:24,265 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:24,265 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:24,366 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:24,366 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:24,472 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:24,472 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:24,577 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:24,577 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:24,600 INFO    Thread-15 :87299 [upload_job.py:push():132] Uploaded file /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/wandb-summary.json
+2022-05-12 15:18:24,601 INFO    Thread-16 :87299 [upload_job.py:push():132] Uploaded file /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/conda-environment.yaml
+2022-05-12 15:18:24,621 INFO    Thread-13 :87299 [upload_job.py:push():132] Uploaded file /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/output.log
+2022-05-12 15:18:24,682 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:24,682 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:24,689 INFO    Thread-12 :87299 [upload_job.py:push():132] Uploaded file /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/requirements.txt
+2022-05-12 15:18:24,788 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:24,788 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:24,893 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:24,894 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:24,999 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:24,999 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:25,105 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:25,105 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:25,189 INFO    Thread-14 :87299 [upload_job.py:push():132] Uploaded file /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/files/config.yaml
+2022-05-12 15:18:25,211 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:25,211 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:25,316 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:25,316 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:25,394 INFO    Thread-6  :87299 [sender.py:transition_state():389] send defer: 8
+2022-05-12 15:18:25,395 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:25,395 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 8
+2022-05-12 15:18:25,395 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:25,395 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-05-12 15:18:25,422 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:25,781 INFO    SenderThread:87299 [sender.py:transition_state():389] send defer: 9
+2022-05-12 15:18:25,782 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:25,782 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:25,783 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 9
+2022-05-12 15:18:25,783 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:25,783 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-05-12 15:18:25,783 INFO    SenderThread:87299 [sender.py:transition_state():389] send defer: 10
+2022-05-12 15:18:25,784 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: defer
+2022-05-12 15:18:25,784 DEBUG   SenderThread:87299 [sender.py:send():232] send: final
+2022-05-12 15:18:25,785 INFO    HandlerThread:87299 [handler.py:handle_request_defer():164] handle defer: 10
+2022-05-12 15:18:25,785 DEBUG   SenderThread:87299 [sender.py:send():232] send: footer
+2022-05-12 15:18:25,785 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: defer
+2022-05-12 15:18:25,785 INFO    SenderThread:87299 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-05-12 15:18:25,890 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: poll_exit
+2022-05-12 15:18:25,891 DEBUG   SenderThread:87299 [sender.py:send_request():246] send_request: poll_exit
+2022-05-12 15:18:25,891 INFO    SenderThread:87299 [file_pusher.py:join():150] waiting for file pusher
+2022-05-12 15:18:26,878 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: sampled_history
+2022-05-12 15:18:26,879 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: get_summary
+2022-05-12 15:18:26,880 DEBUG   HandlerThread:87299 [handler.py:handle_request():141] handle_request: shutdown
+2022-05-12 15:18:26,880 INFO    HandlerThread:87299 [handler.py:finish():806] shutting down handler
+2022-05-12 15:18:27,773 INFO    SenderThread:87299 [sender.py:finish():1110] shutting down sender
+2022-05-12 15:18:27,773 INFO    SenderThread:87299 [file_pusher.py:finish():145] shutting down file pusher
+2022-05-12 15:18:27,773 INFO    SenderThread:87299 [file_pusher.py:join():150] waiting for file pusher
+2022-05-12 15:18:27,795 INFO    WriterThread:87299 [datastore.py:close():279] close: /Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/wandb/run-20220512_151816-u4yfso3n/run-u4yfso3n.wandb
+2022-05-12 15:18:27,796 INFO    MainThread:87299 [internal.py:handle_exit():80] Internal process exited

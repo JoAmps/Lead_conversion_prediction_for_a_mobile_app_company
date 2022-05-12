@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "experiment_tracking.py", line 46, in <module>
+    main(name, model)
+  File "experiment_tracking.py", line 20, in main
+    X_res,y_res = process_data(df)
+  File "/Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/data_preprocess.py", line 31, in process_data
+    X = df.drop(columns='converted')
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/pandas/core/frame.py", line 4948, in drop
+    return super().drop(
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/pandas/core/generic.py", line 4279, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/pandas/core/generic.py", line 4323, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6644, in drop
+    raise KeyError(f"{list(labels[mask])} not found in axis")
+KeyError: "['converted'] not found in axis"

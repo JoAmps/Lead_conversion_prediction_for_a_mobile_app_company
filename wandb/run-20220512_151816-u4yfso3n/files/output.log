@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "experiment_tracking.py", line 50, in <module>
+    main(name, model)
+  File "experiment_tracking.py", line 23, in main
+    X_res,y_res = process_data(df)
+  File "/Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/data_preprocess.py", line 44, in process_data
+    ohe = OneHotEncoder(sparse=False, handle_unknown="ignore")
+NameError: name 'OneHotEncoder' is not defined

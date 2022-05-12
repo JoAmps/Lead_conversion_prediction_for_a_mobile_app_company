@@ -1,0 +1,4 @@
+name: py36
+channels:
+  - conda-forge
+prefix: /Users/hyacinthampadu/miniforge3/envs/py36/envs/py36
