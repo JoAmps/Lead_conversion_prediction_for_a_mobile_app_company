@@ -1,0 +1,1 @@
+{"accuracy": 0.6824871764181972, "f1_macro": 0.6824792288387254, "precision_macro": 0.6825208609299532, "recall_macro": 0.682502726676421, "_timestamp": 1652373766, "_runtime": 503, "_step": 2, "_wandb": {"runtime": 504}}

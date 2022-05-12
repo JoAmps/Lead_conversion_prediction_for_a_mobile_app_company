@@ -6,29 +6,28 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import LinearSVC
 import wandb
 import pandas as pd
-from data_preprocess import process_data
+from functions.data_preprocess import process_data
+from load_data import load_data
 
 
 def main(name_model, model):
 
     wandb.init(project='leads', 
-                group=name_model, # Group experiments by model
+                group=name_model,  # Group experiments by model
+                reinit=True   
     )
 
     # Load dataset
-    df = pd.read_csv('datasets/lead_convert.csv',index_col=0)
+    df =load_data()
     X_res,y_res = process_data(df)
 
-    # Split into train and test set
-    #X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=1)
-    #result = cross_val_score(cv_xgb.best_estimator_, X_res,y_res, cv = kf, scoring='precision_macro',n_jobs=-1)
     k = 5
     kf = StratifiedKFold(n_splits=k, random_state=0,shuffle=True)
 
-    accuracy = cross_val_score(model,  X_res,y_res, cv=kf, scoring='accuracy',n_jobs=-1).mean()
-    f1_macro = cross_val_score(model, X_res,y_res, cv=kf, scoring='f1_macro',n_jobs=-1).mean()
-    precision_macro = cross_val_score(model, X_res,y_res, cv=kf, scoring='precision_macro',n_jobs=-1).mean()
-    recall_macro = cross_val_score(model, X_res,y_res, cv=kf, scoring='recall_macro',n_jobs=-1).mean()
+    accuracy = cross_val_score(model,  X_res,y_res, cv=kf, scoring='accuracy').mean()
+    f1_macro = cross_val_score(model, X_res,y_res, cv=kf, scoring='f1_macro').mean()
+    precision_macro = cross_val_score(model, X_res,y_res, cv=kf, scoring='precision_macro').mean()
+    recall_macro = cross_val_score(model, X_res,y_res, cv=kf, scoring='recall_macro').mean()
 
     wandb.log({'accuracy': accuracy,
                 'f1_macro': f1_macro,
@@ -38,7 +37,7 @@ def main(name_model, model):
   
 
 if __name__=='__main__':
-    models = {'LogisticRegression': LogisticRegression(solver='liblinear',max_iter=1000),
+    models = {'LogisticRegression': LogisticRegression(solver='liblinear',max_iter=10000,random_state=0),
             'LinearSVC': LinearSVC(),
             'DecisionTreeClassifier': DecisionTreeClassifier()}
     

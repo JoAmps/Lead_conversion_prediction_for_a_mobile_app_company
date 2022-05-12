@@ -1,0 +1,98 @@
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+Exception in thread ChkStopThr:
+Traceback (most recent call last):
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 170, in check_status
+    status_response = self._interface.communicate_stop_status()
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 127, in communicate_stop_status
+    resp = self._communicate_stop_status(status)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 395, in _communicate_stop_status
+    resp = self._communicate(req, local=True)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 226, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 231, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Exception in thread NetStatThr:
+Traceback (most recent call last):
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 152, in check_network_status
+    status_response = self._interface.communicate_network_status()
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 138, in communicate_network_status
+    resp = self._communicate_network_status(status)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 405, in _communicate_network_status
+    resp = self._communicate(req, local=True)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 226, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 231, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Traceback (most recent call last):
+  File "experiment_tracking.py", line 46, in <module>
+    main(name, model)
+  File "experiment_tracking.py", line 31, in main
+    recall_macro = cross_val_score(model, X_res,y_res, cv=kf, scoring='recall_macro').mean()
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 509, in cross_val_score
+    cv_results = cross_validate(
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/joblib/parallel.py", line 1046, in __call__
+    while self.dispatch_one_batch(iterator):
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/joblib/parallel.py", line 861, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/joblib/parallel.py", line 779, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 208, in apply_async
+    result = ImmediateResult(func)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 572, in __init__
+    self.results = batch()
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/joblib/parallel.py", line 262, in __call__
+    return [func(*args, **kwargs)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/joblib/parallel.py", line 262, in <listcomp>
+    return [func(*args, **kwargs)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/utils/fixes.py", line 216, in __call__
+    return self.function(*args, **kwargs)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 680, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_classes.py", line 257, in fit
+    self.coef_, self.intercept_, self.n_iter_ = _fit_liblinear(
+  File "/Users/hyacinthampadu/miniforge3/envs/py36/lib/python3.8/site-packages/sklearn/svm/_base.py", line 1186, in _fit_liblinear
+    raw_coef_, n_iter_ = liblinear.train_wrap(
+KeyboardInterrupt
