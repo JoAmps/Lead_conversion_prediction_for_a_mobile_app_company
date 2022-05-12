@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+pytest
+requests
+flake8
+imblearn
+joblib
+wandb

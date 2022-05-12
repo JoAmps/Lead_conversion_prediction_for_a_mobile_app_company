@@ -2,11 +2,6 @@ import pytest
 from functions.data_preprocess import process_data
 import pandas as pd
 from load_data import load_data
-#def load_preprocess():
-#    df = pd.read_csv('datasets/lead_convert.csv',index_col=0)
- #   _,_,df = process_data(df)
- #   return df
-
 @pytest.fixture
 def data():
     """
