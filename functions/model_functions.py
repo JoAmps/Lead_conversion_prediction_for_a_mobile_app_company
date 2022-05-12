@@ -1,7 +1,24 @@
-from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score
+from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score, roc_auc_score,roc_curve
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 import logging
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix
+
+
+def get_features():
+    features = [
+        'lead_utm_source',
+        'lead_utm_medium',
+        'lead_weekday_of_registration',
+        'lead_month_day_of_registration',
+        'lead_country_of_registration',
+        'lead_ua_device_class',
+        'lead_time_of_registration',
+        'Time since registration']
+    return features
+
 
 def split_data(data):
     """
@@ -71,6 +88,7 @@ def model_predictions(X_test, model):
     except BaseException:
         logging.info('ERROR!:Model predictions not generated')
 
+
 def compute_metrics(y, predictions):
     """
     Validates the trained machine learning model
@@ -96,6 +114,29 @@ def compute_metrics(y, predictions):
         return accuracy, precision, recall, f1
     except BaseException:
         logging.info('ERROR: Error occurred when scoring Models')
+
+
+def plot_visualizations(predictions, y_test):
+    #confusion matrix
+    sns.heatmap(confusion_matrix(predictions, y_test),annot=True, annot_kws={"fontsize":20}, fmt='d', cbar=False,cmap='icefire')
+    plt.title('Confusion Matrix', color='navy', fontsize=15)
+    plt.xlabel('Predicted Values')
+    plt.ylabel('Actual Values')
+    plt.savefig("plots/confusionmatrix.png", bbox_inches='tight', dpi=1000)
+    #roc curve
+    fpr, tpr, _ = roc_curve(y_test, predictions)
+    plt.figure(figsize=(7,7))
+    plt.plot(fpr, tpr, label='AUC (Area = %0.2f)' %roc_auc_score(y_test,predictions))
+    plt.plot([0,1], [0,1], 'r--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('Sensitivity : False Positive Ratio')
+    plt.ylabel('True Positive Ratio')
+    plt.title('ROC and AUC of the XGboost Model')
+    plt.legend()
+    plt.savefig("plots/roc_curve.png", bbox_inches='tight', dpi=1000)
+    
+
 
 
 def inference(model, X):
