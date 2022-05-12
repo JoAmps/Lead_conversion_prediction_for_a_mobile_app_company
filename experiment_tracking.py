@@ -1,25 +1,24 @@
-from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import StratifiedKFold
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import LinearSVC
+from sklearn.ensemble import AdaBoostClassifier
 import wandb
 import pandas as pd
-from functions.data_preprocess import process_data
-from load_data import load_data
+from functions.data_preprocess import preprocess_data
+from load_and_clean_data import process_data
 
 
 def main(name_model, model):
 
-    wandb.init(project='leads', 
+    wandb.init(project='lead_conversions', 
                 group=name_model,  # Group experiments by model
                 reinit=True   
     )
 
-    # Load dataset
-    df =load_data()
-    X_res,y_res = process_data(df)
+    df =process_data()
+    X_res,y_res = preprocess_data(df)
 
     k = 5
     kf = StratifiedKFold(n_splits=k, random_state=0,shuffle=True)
@@ -37,9 +36,10 @@ def main(name_model, model):
   
 
 if __name__=='__main__':
-    models = {'LogisticRegression': LogisticRegression(solver='liblinear',max_iter=10000,random_state=0),
+    models = {'LogisticRegression': LogisticRegression(solver='liblinear',max_iter=100000,random_state=0),
             'LinearSVC': LinearSVC(),
-            'DecisionTreeClassifier': DecisionTreeClassifier()}
+            'DecisionTreeClassifier': DecisionTreeClassifier(),
+            'AdaBoostClassifier':AdaBoostClassifier()}
     
     for name, model in models.items():
         main(name, model)  

@@ -1,0 +1,28 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.16
+    framework: sklearn
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    python_version: 3.8.12
+    start_time: 1652390799
+    t:
+      1:
+      - 5
+      - 53
+      - 55
+      2:
+      - 5
+      - 53
+      - 55
+      3:
+      - 2
+      4: 3.8.12
+      5: 0.12.16
+      8:
+      - 2
+      - 4
+      - 5

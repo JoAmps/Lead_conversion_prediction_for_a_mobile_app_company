@@ -1,0 +1,22 @@
+{
+    "os": "macOS-12.0.1-arm64-arm-64bit",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-05-12T18:45:37.838439",
+    "startedAt": "2022-05-12T18:45:27.813049",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "experiment_tracking.py",
+    "codePath": "experiment_tracking.py",
+    "git": {
+        "remote": "https://github.com/JoAmps/lead_convert.git",
+        "commit": "ab57a7ccf0d028edd52d211595587d3e228ba60e"
+    },
+    "email": "ampaduh@gmail.com",
+    "root": "/Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision",
+    "host": "Hyacinths-MacBook-Air.local",
+    "username": "hyacinthampadu",
+    "executable": "/Users/hyacinthampadu/miniforge3/envs/py36/bin/python"
+}
