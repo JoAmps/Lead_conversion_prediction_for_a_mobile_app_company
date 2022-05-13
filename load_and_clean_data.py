@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from imblearn.over_sampling import SMOTE
 
 
 def process_data():
@@ -50,6 +51,12 @@ def process_data():
             'conversion_revenue', 'hours_since_registration',
             'different_redirect_sources']
     df = df.drop(columns=drop_cols)
+    # balance datasets
+    class_count_0, _ = df['converted'].value_counts()
+    class_0 = df[df['converted'] == 0]
+    class_1 = df[df['converted'] == 1]
+    class_1_over = class_1.sample(class_count_0, replace=True)
+    df = pd.concat([class_1_over, class_0], axis=0)
     df.to_csv('./datasets/clean_leads_convert.csv')
     return df
 

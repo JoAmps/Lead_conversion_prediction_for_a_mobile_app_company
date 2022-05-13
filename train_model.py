@@ -14,11 +14,13 @@ logging.basicConfig(
 
 if __name__ == '__main__':
     df = read_data('datasets/clean_leads_convert.csv')
-    train, test = split_data(df)
-    X_train, y_train = preprocess_data(train,label='converted')
-    X_test, y_test = preprocess_data(test,label='converted')
+    train, test = split_data(df)               
+    X_train, y_train,ohe= preprocess_data(df, label='converted',training=True)
+    X_test, y_test,ohe= preprocess_data(df, label='converted',training=False, ohe=ohe)
     model = train_model(X_train, y_train)
     dump(model, './outputs/model.joblib')
+    #dump(lb, './outputs/lb.joblib')
+    dump(ohe, './outputs/ohe.joblib')
     predictions = model_predictions(X_test, model)
     accuracy, precision, recall, f1 = compute_metrics(y_test, predictions)
     model_scores = []

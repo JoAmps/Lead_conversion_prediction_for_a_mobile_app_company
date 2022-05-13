@@ -51,6 +51,7 @@ async def get_items():
 @app.post("/")
 async def inferences(user_data: User):
     model_object = load("outputs/model.joblib")
+    ohe = load("outputs/ohe.joblib")
     array = np.array([[
                      user_data.lead_utm_source,
                      user_data.lead_utm_medium,
@@ -72,7 +73,7 @@ async def inferences(user_data: User):
         'lead_time_of_registration',
         'Time_since_registration',
     ])
-    X,_ = preprocess_data(df_temp)
+    X,_,_ = preprocess_data(df_temp,ohe=ohe)
     prediction = inference(model_object, X)
-    y = (prediction)
+    y = (prediction.tolist())
     return {"prediction": y}
