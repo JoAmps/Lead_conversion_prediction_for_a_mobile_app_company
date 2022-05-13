@@ -6,7 +6,7 @@ from sklearn.svm import LinearSVC
 from sklearn.ensemble import AdaBoostClassifier
 import wandb
 from functions.data_preprocess import preprocess_data
-from load_and_clean_data import process_data
+from load_and_clean_data import read_data
 
 
 def main(name_model, model):
@@ -16,7 +16,7 @@ def main(name_model, model):
                reinit=True
                )
 
-    df = process_data()
+    df = read_data('datasets/clean_leads_convert.csv')
     X_res, y_res = preprocess_data(df)
 
     k = 5

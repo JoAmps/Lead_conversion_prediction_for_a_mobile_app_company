@@ -50,5 +50,14 @@ def process_data():
             'conversion_revenue', 'hours_since_registration',
             'different_redirect_sources']
     df = df.drop(columns=drop_cols)
-
+    df.to_csv('./datasets/clean_leads_convert.csv')
     return df
+
+def read_data(path):
+    df = pd.read_csv(path, index_col=0)
+    return df
+
+
+if __name__ == '__main__':  
+    df=process_data()
+    df=read_data('datasets/clean_leads_convert.csv')

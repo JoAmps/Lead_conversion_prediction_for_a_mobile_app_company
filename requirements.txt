@@ -7,3 +7,6 @@ flake8
 imblearn
 joblib
 wandb
+flask
+streamlit
+flasgger
