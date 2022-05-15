@@ -14,6 +14,7 @@ Lead conversion is a crucial aspect of business, especially for app and website 
 * Testing
 * Deployment
 * Containerization
+* Continous integration/Continous deployment(CI/CD)
 
 ### Technologies
 * Python
@@ -25,6 +26,7 @@ Lead conversion is a crucial aspect of business, especially for app and website 
 * Visual studio code, jupyter
 * Git
 * Unit Testing(pytest)
+* Github actions for CI/CD
 
 ## Project Description
 #### The ability to predict leads that are likely to convert is crucial to this company, so they know which people to target wehn they first hear about their app. For a lead to convert, there are various processes, the ideal process is,lead hears about app, leads checks out app, leads reads more about the app elsewhere, leads registers with the app, hence lead converts. During this process, the lead can stop at anytime, so its important to be able to predict the ones that are likley to convert to enable them complete the converting process succesfully. I obtained the dataset from a practise test i was given, and i synthesized the dataset so it doesnt look too much like the original.
