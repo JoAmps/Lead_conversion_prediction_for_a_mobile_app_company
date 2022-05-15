@@ -10,8 +10,18 @@ Lead conversion is a crucial aspect of business, especially for app and website 
 * Inferential Statistics
 * Machine Learning
 * Data Visualization
-* Predictive Modeling
 * Experiment tracking
 * Testing
 * Deployment
 * Containerization
+
+### Technologies
+* Python
+* Various python libraries for data science and machine learning
+* Streamlit for frontend
+* Docker
+* Weights and biases
+* Fast API for backend
+* Visual studio code, jupyter
+* Git
+* Unit Testing(pytest)
