@@ -32,3 +32,11 @@ Lead conversion is a crucial aspect of business, especially for app and website 
 #### What are the characteristics of leads that converted, is there a trend in their behaviour online?
 #### Can i predict with a reasonable amount of certainty the leads that are likely to convert, since 11% is the best percentage of leads that actually convert?
 #### Whats the best way to get this app to the company so they use to improve their business?
+
+#### Some of the challenges faced were:
+#### Only a little under 5% of leads converted with this app, so best way to balance the data appropriately so the ML algorithm trains on it without bias
+#### Which model to use that gives high performance, and also explainability
+
+## Getting Started
+1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
+2. For users, go to https://share.streamlit.io/joamps/lead_conversion_prediction_for_a_mobile_app_company/main/frontend-streamlit/streamlit_app.py to test the app out

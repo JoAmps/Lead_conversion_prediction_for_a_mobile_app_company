@@ -15,7 +15,7 @@ def run():
     lead_utm_medium= st.selectbox("Select lead utm medium",('social', 'paid', 'email','affiliates','banner','cpc','organic_search','display'))        
     lead_weekday_of_registration=st.selectbox("Select if lead registered on a weekday/weekend",('weekday', 'weekend'))      
     lead_country_of_registration= st.selectbox("Select Country of origin of lead",('usa', 'uk' ,'india', 'france','russia','china','south_africa','germany','nigeria','japan','italy','pakistan','ghana'))
-    lead_ua_device_class= st.selectbox("Select Country of origin of lead",('Phone', 'Desktop', 'Tablet','Set-top box','Mobile','TV'))
+    lead_ua_device_class= st.selectbox("Select the device is using",('Phone', 'Desktop', 'Tablet','Set-top box','Mobile','TV'))
     lead_time_of_registration=st.selectbox("Select Time of day lead registered",('Dawn', 'Morning', 'Afternoon','Evening','Night'))
     Time_since_registration=st.selectbox("Select time passed since lead checked out app",('Under one day','A month to over a year','A week to a month','A day to a week'))
 
