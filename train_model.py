@@ -19,7 +19,6 @@ if __name__ == '__main__':
     X_test, y_test,ohe= preprocess_data(df, label='converted',training=False, ohe=ohe)
     model = train_model(X_train, y_train)
     dump(model, './outputs/model.joblib')
-    #dump(lb, './outputs/lb.joblib')
     dump(ohe, './outputs/ohe.joblib')
     predictions = model_predictions(X_test, model)
     accuracy, precision, recall, f1 = compute_metrics(y_test, predictions)
@@ -31,5 +30,5 @@ if __name__ == '__main__':
         for score in model_scores:
             out.write(score)
 
-    plot_visualizations(predictions, y_test)
+    plot_visualizations(predictions, y_test,model,X_test)
     print('model training done')

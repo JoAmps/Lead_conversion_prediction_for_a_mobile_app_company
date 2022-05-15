@@ -4,9 +4,9 @@ scikit-learn
 pytest
 requests
 flake8
-imblearn
 joblib
 wandb
-flask
+fastapi
 streamlit
-flasgger
+seaborn
+uvicorn

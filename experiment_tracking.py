@@ -5,7 +5,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import LinearSVC
 from sklearn.ensemble import AdaBoostClassifier
 import wandb
-from functions.data_preprocess import preprocess_data
+from data_preprocess import preprocess_data
 from load_and_clean_data import read_data
 
 

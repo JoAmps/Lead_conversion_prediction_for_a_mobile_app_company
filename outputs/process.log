@@ -2,4 +2,4 @@ root - INFO - SUCCESS!:Data split successfully
 root - INFO - SUCCESS!:Model trained and saved
 root - INFO - SUCCESS!:Model predictions generated
 root - INFO - SUCCESS: Model scoring completed
-root - INFO - SUCCESS!:Visualizations plotted and saved!
+root - INFO - ERROR: Visualizations could nt be plotted and saved!

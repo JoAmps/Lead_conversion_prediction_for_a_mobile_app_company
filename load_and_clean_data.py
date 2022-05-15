@@ -49,7 +49,7 @@ def process_data():
     drop_cols = ['lead_hour_of_registration', 'redirect_hour',
         'redirect_weekday', 'redirect_month_day', 'hours_since_last_revenue',
             'conversion_revenue', 'hours_since_registration',
-            'different_redirect_sources']
+            'different_redirect_sources','lead_month_day_of_registration']
     df = df.drop(columns=drop_cols)
     # balance datasets
     class_count_0, _ = df['converted'].value_counts()

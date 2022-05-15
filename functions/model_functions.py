@@ -6,6 +6,8 @@ import logging
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
+from sklearn.tree import plot_tree
+
 
 
 def split_data(data):
@@ -104,7 +106,7 @@ def compute_metrics(y, predictions):
         logging.info('ERROR: Error occurred when scoring Models')
 
 
-def plot_visualizations(predictions, y_test):
+def plot_visualizations(predictions, y_test,model,X_test):
     try:
         # confusion matrix
         sns.heatmap(
@@ -139,6 +141,15 @@ def plot_visualizations(predictions, y_test):
         plt.title('ROC and AUC of the XGboost Model')
         plt.legend()
         plt.savefig("plots/roc_curve.png", bbox_inches='tight', dpi=1000)
+        
+        #visualize decision tree outputs
+        plt.figure(figsize=(15,11))
+        plot_tree(model,
+        filled = True,max_depth=1,
+        rounded=True,
+        class_names=['not_converted','converted'],
+        feature_names=X_test.columns);
+        plt.savefig("plots/decisiontree_output.png", bbox_inches='tight', dpi=1000)
         logging.info('SUCCESS!:Visualizations plotted and saved!')
     except BaseException:
         logging.info('ERROR: Visualizations could nt be plotted and saved!')
