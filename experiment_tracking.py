@@ -4,7 +4,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from xgboost import XGBClassifier
 from sklearn.ensemble import RandomForestClassifier
-import lightgbm
 from lightgbm import LGBMClassifier
 import wandb
 from app.data_preprocess import preprocess_data
@@ -19,7 +18,7 @@ def main(name_model, model):
                )
 
     df = read_data('datasets/clean_leads_convert.csv')
-    X_res, y_res,_ = preprocess_data(df, label='converted',training=True)
+    X_res, y_res, _ = preprocess_data(df, label='converted', training=True)
 
     k = 5
     kf = StratifiedKFold(n_splits=k, random_state=0, shuffle=True)
@@ -48,12 +47,18 @@ def main(name_model, model):
 
 
 if __name__ == '__main__':
-    models = {'LogisticRegression': LogisticRegression(solver='liblinear',
-        max_iter=100000, random_state=0),
-        'XGBClassifier': XGBClassifier(random_state=0),
-              'DecisionTreeClassifier': DecisionTreeClassifier(),
-              'RandomForestClassifier': RandomForestClassifier(random_state=0),
-              'LGBMClassifier':LGBMClassifier(random_state=0)}
+    models = {
+        'LogisticRegression': LogisticRegression(
+            solver='liblinear',
+            max_iter=100000,
+            random_state=0),
+        'XGBClassifier': XGBClassifier(
+            random_state=0),
+        'DecisionTreeClassifier': DecisionTreeClassifier(),
+        'RandomForestClassifier': RandomForestClassifier(
+            random_state=0),
+        'LGBMClassifier': LGBMClassifier(
+            random_state=0)}
 
     for name, model in models.items():
         main(name, model)

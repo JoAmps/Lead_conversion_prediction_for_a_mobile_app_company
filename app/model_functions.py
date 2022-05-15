@@ -1,5 +1,5 @@
 from sklearn.metrics import f1_score, precision_score, recall_score,\
- accuracy_score, roc_auc_score, roc_curve
+    accuracy_score, roc_auc_score, roc_curve
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import logging
@@ -7,7 +7,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 import numpy as np
-
 
 
 def split_data(data):
@@ -106,7 +105,7 @@ def compute_metrics(y, predictions):
         logging.info('ERROR: Error occurred when scoring Models')
 
 
-def plot_visualizations(predictions, y_test,model,X_test):
+def plot_visualizations(predictions, y_test, model, X_test):
     try:
         # confusion matrix
         sns.heatmap(
@@ -141,21 +140,23 @@ def plot_visualizations(predictions, y_test,model,X_test):
         plt.title('ROC and AUC of the XGboost Model')
         plt.legend()
         plt.savefig("plots/roc_curve.png", bbox_inches='tight', dpi=1000)
-        
-        #generate feature importance
+
+        # generate feature importance
         importances = model.feature_importances_
         indices = np.argsort(importances)[::-1]
         names = [X_test.columns[i] for i in indices]
-        plt.figure(figsize=(20,5))
+        plt.figure(figsize=(20, 5))
         plt.title("Feature Importance")
-        plt.ylabel('Importance') 
+        plt.ylabel('Importance')
         plt.bar(range(X_test.shape[1]), importances[indices])
-        plt.xticks(range(X_test.shape[1]), names, rotation=90);
-        plt.savefig("plots/feature_importance.png", bbox_inches='tight', dpi=1000)
+        plt.xticks(range(X_test.shape[1]), names, rotation=90)
+        plt.savefig(
+            "plots/feature_importance.png",
+            bbox_inches='tight',
+            dpi=1000)
         logging.info('SUCCESS!:Visualizations plotted and saved!')
     except BaseException:
         logging.info('ERROR: Visualizations could not be plotted and saved!')
-
 
 
 def inference(model, X):

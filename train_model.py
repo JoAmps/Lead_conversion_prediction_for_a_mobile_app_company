@@ -1,7 +1,7 @@
 import logging
 from app.data_preprocess import preprocess_data
 from app.model_functions import split_data, train_model,\
-     model_predictions, compute_metrics, plot_visualizations
+    model_predictions, compute_metrics, plot_visualizations
 from load_and_clean_data import read_data
 from joblib import dump
 
@@ -14,9 +14,11 @@ logging.basicConfig(
 
 if __name__ == '__main__':
     df = read_data('datasets/clean_leads_convert.csv')
-    train, test = split_data(df)               
-    X_train, y_train,ohe= preprocess_data(df, label='converted',training=True)
-    X_test, y_test,ohe= preprocess_data(df, label='converted',training=False, ohe=ohe)
+    train, test = split_data(df)
+    X_train, y_train, ohe = preprocess_data(
+        df, label='converted', training=True)
+    X_test, y_test, ohe = preprocess_data(
+        df, label='converted', training=False, ohe=ohe)
     model = train_model(X_train, y_train)
     dump(model, './functions/model.joblib')
     dump(ohe, './functions/ohe.joblib')
@@ -30,5 +32,5 @@ if __name__ == '__main__':
         for score in model_scores:
             out.write(score)
 
-    plot_visualizations(predictions, y_test,model,X_test)
+    plot_visualizations(predictions, y_test, model, X_test)
     print('model training done')

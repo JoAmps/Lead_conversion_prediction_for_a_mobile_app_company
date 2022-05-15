@@ -26,7 +26,7 @@ def test_balanced_data(data):
     """
     check if the target column is balanced
     """
-    _, y_res,_ = preprocess_data(data,label='converted',training=True)
+    _, y_res, _ = preprocess_data(data, label='converted', training=True)
     assert y_res.value_counts()[0] == y_res.value_counts()[1]
 
 
@@ -35,7 +35,8 @@ def test_process_train(data):
     Check train data has same number of rows for X and y
     """
     train, _ = split_data(data)
-    X_train, y_train,_ = preprocess_data(train,label='converted',training=True)
+    X_train, y_train, _ = preprocess_data(
+        train, label='converted', training=True)
     assert X_train.shape[0] == y_train.shape[0]
 
 
@@ -45,7 +46,8 @@ def test_process_test(data):
     """
     ohe = load("functions/ohe.joblib")
     _, test = split_data(data)
-    X_test, y_test,ohe = preprocess_data(test, label='converted',training=False, ohe=ohe)
+    X_test, y_test, ohe = preprocess_data(
+        test, label='converted', training=False, ohe=ohe)
     assert X_test.shape[0] == y_test.shape[0]
 
 
@@ -56,6 +58,7 @@ def test_predictions(data):
     model = load("functions/model.joblib")
     ohe = load("functions/ohe.joblib")
     _, test = split_data(data)
-    X_test, y_test,_ = preprocess_data(test, label='converted',training=False, ohe=ohe)
+    X_test, y_test, _ = preprocess_data(
+        test, label='converted', training=False, ohe=ohe)
     predictions = model_predictions(X_test, model)
     assert len(y_test) == len(predictions)
