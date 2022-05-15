@@ -30,7 +30,7 @@ def run():
             }
 
     if st.button("Predict"):
-            response = requests.post("http://0.0.0.0:80/predict", json=data)
+            response = requests.post("http://127.0.0.1:8000/predict", json=data)
             prediction =response.text
             st.success(f"The prediction from model: {prediction}")
     
