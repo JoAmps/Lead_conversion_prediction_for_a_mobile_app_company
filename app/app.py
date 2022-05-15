@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from joblib import load
 from pandas.core.frame import DataFrame
 import numpy as np
+import uvicorn
 from data_preprocess import preprocess_data
 from model_functions import inference
 
@@ -48,7 +49,7 @@ async def get_items():
     return {"message": "Welcome to the Lead conversion webpage"}
 
 
-@app.post("/")
+@app.post("/predict")
 async def inferences(user_data: User):
     model_object = load("../functions/model.joblib")
     ohe = load("../functions/ohe.joblib")
@@ -78,3 +79,5 @@ async def inferences(user_data: User):
     return {"prediction": prediction_label}
     #y = (prediction.tolist())
     #return {"prediction": y}#
+#if __name__ == '__main__':
+ #   uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)    
