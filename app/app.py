@@ -45,12 +45,18 @@ app = FastAPI()
 
 
 @app.get("/")
-async def get_items():
-    return {"message": "Welcome to the Lead conversion webpage"}
+def home():
+    """
+     Testing availiabilty of the application.
+     """
+    return {'message': 'App works!'}
+#async def get_items():
+  #  return {"message": "Welcome to the Lead conversion webpage"}
 
 
 @app.post("/predict")
-async def inferences(user_data: User):
+#async def inferences(user_data: User):
+def inferences(user_data: User):
     model_object = load("../functions/model.joblib")
     ohe = load("../functions/ohe.joblib")
     array = np.array([[
@@ -67,17 +73,18 @@ async def inferences(user_data: User):
         'lead_utm_source',
         'lead_utm_medium',
         'lead_weekday_of_registration',
-        'lead_month_day_of_registration',
+        'lead_country_of_registration',
         'lead_ua_device_class',
         'lead_time_of_registration',
         'Time_since_registration',
     ])
     X,_,_ = preprocess_data(df_temp,ohe=ohe)
     prediction = inference(model_object, X)
-    prediction_label = ['This lead wont convert' if label == 0 else 'This lead would convert' for label in prediction ]
+    prediction_label = ['This lead wont convert' if label == 0 else 'This lead will convert' for label in prediction ]
     # Return response back to client
     return {"prediction": prediction_label}
     #y = (prediction.tolist())
     #return {"prediction": y}#
-#if __name__ == '__main__':
- #   uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)    
+if __name__ == '__main__':
+    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)   
+    #127.0.0.1:8000 
