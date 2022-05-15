@@ -12,4 +12,5 @@ wandb
 lightgbm
 xgboost
 pydantic
+flake8
 
