@@ -19,8 +19,8 @@ Lead conversion is a crucial aspect of business, especially for app and website 
 * Python
 * Various python libraries for data science and machine learning
 * Streamlit for frontend
-* Docker
-* Weights and biases
+* Docker for containerization
+* Weights and biases for experiment tracking
 * Fast API for backend
 * Visual studio code, jupyter
 * Git
