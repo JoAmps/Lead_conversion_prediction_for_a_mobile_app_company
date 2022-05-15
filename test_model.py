@@ -40,25 +40,25 @@ def test_process_train(data):
     assert X_train.shape[0] == y_train.shape[0]
 
 
-def test_process_test(data):
-    """
-    Check test data has same number of rows for X and y
-    """
-    ohe = load("functions/ohe.joblib")
-    _, test = split_data(data)
-    X_test, y_test, ohe = preprocess_data(
-        test, label='converted', training=False, ohe=ohe)
-    assert X_test.shape[0] == y_test.shape[0]
+#def test_process_test(data):
+ #   """
+  #  Check test data has same number of rows for X and y
+   # """
+    #ohe = load("functions/ohe.joblib")
+    #_, test = split_data(data)
+    #X_test, y_test, ohe = preprocess_data(
+     #   test, label='converted', training=False, ohe=ohe)
+    #assert X_test.shape[0] == y_test.shape[0]
 
 
-def test_predictions(data):
-    """
-    Check test data has same number of rows as predictions for evaluation
-    """
-    model = load("functions/model.joblib")
-    ohe = load("functions/ohe.joblib")
-    _, test = split_data(data)
-    X_test, y_test, _ = preprocess_data(
-        test, label='converted', training=False, ohe=ohe)
-    predictions = model_predictions(X_test, model)
-    assert len(y_test) == len(predictions)
+#def test_predictions(data):
+ #   """
+  #  Check test data has same number of rows as predictions for evaluation
+   # """
+    #model = load("functions/model.joblib")
+    #ohe = load("functions/ohe.joblib")
+    #_, test = split_data(data)
+    #X_test, y_test, _ = preprocess_data(
+    #    test, label='converted', training=False, ohe=ohe)
+    #predictions = model_predictions(X_test, model)
+    #assert len(y_test) == len(predictions)
