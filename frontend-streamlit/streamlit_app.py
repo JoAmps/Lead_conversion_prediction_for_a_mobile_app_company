@@ -35,5 +35,4 @@ def run():
             st.success(f"The prediction from model: {prediction}")
     
 if __name__ == '__main__':
-    #by default it will run at 8501 port
     run()
