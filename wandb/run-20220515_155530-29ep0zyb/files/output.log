@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "experiment_tracking.py", line 59, in <module>
+    main(name, model)
+  File "experiment_tracking.py", line 22, in main
+    X_res, y_res = preprocess_data(df)
+  File "/Users/hyacinthampadu/Documents/Jos Folder/Data Science/Portfolio/lead_converision/app/data_preprocess.py", line 18, in preprocess_data
+    X = ohe.transform(X)
+AttributeError: 'NoneType' object has no attribute 'transform'

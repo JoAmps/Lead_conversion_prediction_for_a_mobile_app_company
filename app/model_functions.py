@@ -1,12 +1,12 @@
 from sklearn.metrics import f1_score, precision_score, recall_score,\
  accuracy_score, roc_auc_score, roc_curve
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import logging
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
-from sklearn.tree import plot_tree
+import numpy as np
 
 
 
@@ -26,7 +26,7 @@ def split_data(data):
     """
     try:
         train, test = train_test_split(
-            data, test_size=0.15, random_state=0, stratify=data['converted'])
+            data, test_size=0.1, random_state=0, stratify=data['converted'])
         logging.info('SUCCESS!:Data split successfully')
         return train, test
     except BaseException:
@@ -49,7 +49,7 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
     try:
-        model = DecisionTreeClassifier(random_state=0)
+        model = RandomForestClassifier(random_state=0)
         model.fit(X_train, y_train)
         logging.info('SUCCESS!:Model trained and saved')
         return model
@@ -142,17 +142,19 @@ def plot_visualizations(predictions, y_test,model,X_test):
         plt.legend()
         plt.savefig("plots/roc_curve.png", bbox_inches='tight', dpi=1000)
         
-        #visualize decision tree outputs
-        plt.figure(figsize=(15,11))
-        plot_tree(model,
-        filled = True,max_depth=1,
-        rounded=True,
-        class_names=['not_converted','converted'],
-        feature_names=X_test.columns);
-        plt.savefig("plots/decisiontree_output.png", bbox_inches='tight', dpi=1000)
+        #generate feature importance
+        importances = model.feature_importances_
+        indices = np.argsort(importances)[::-1]
+        names = [X_test.columns[i] for i in indices]
+        plt.figure(figsize=(20,5))
+        plt.title("Feature Importance")
+        plt.ylabel('Importance') 
+        plt.bar(range(X_test.shape[1]), importances[indices])
+        plt.xticks(range(X_test.shape[1]), names, rotation=90);
+        plt.savefig("plots/feature_importance.png", bbox_inches='tight', dpi=1000)
         logging.info('SUCCESS!:Visualizations plotted and saved!')
     except BaseException:
-        logging.info('ERROR: Visualizations could nt be plotted and saved!')
+        logging.info('ERROR: Visualizations could not be plotted and saved!')
 
 
 
