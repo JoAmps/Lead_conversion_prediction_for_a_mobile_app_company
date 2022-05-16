@@ -42,3 +42,7 @@ Lead conversion is a crucial aspect of business, especially for app and website 
 ## Getting Started
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
 2. For users, go to https://share.streamlit.io/joamps/lead_conversion_prediction_for_a_mobile_app_company/main/frontend-streamlit/streamlit_app.py to test the app out
+
+## Results
+The first and important thing was to look at the characteristics of leads that converted, 
+![Lead country of origin](https://github.com/JoAmps/Churn-prediction-in-a-vehicle-insurance-company-in-Ghana/blob/main/confusion_matrix.png)
