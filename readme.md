@@ -41,7 +41,15 @@ Lead conversion is a crucial aspect of business, especially for app and website 
 
 ## Getting Started
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. For users, go to https://share.streamlit.io/joamps/lead_conversion_prediction_for_a_mobile_app_company/main/frontend-streamlit/streamlit_app.py to test the app out
+2. The app folder contains code for the backend development using fast API, the requirements.txt file needed to install required libraries for the app to work, the code for defining the model functions and evaluation metrics, and code for preprocessing the data
+3. The dataset folder contains the datasets used for this, both the raw and processed data
+4. Functions folder contains the saved outputs from the training, the model, and the one-hot encoder
+5. Plots folder contains images of the confusion matrix, feature importance, the roc curve, and the experiments tracked using weights and biases for a quick overview.
+6. The frontend-streamlit folder contains all code used to build the frontend, which is built using streamlit
+7. From the homepage, the train_model.py is the code that interconnects the various scripts and is used to train the model and evaluate the performance and output the respective functions
+8. The test_model.py runs unit testing on important functions to make sure the code works and there's no fault anywhere
+9. load_and_clean_data.py loads the raw data and cleans it and outputs the clean data to the datasets folder to be used for training
+10. EDA.ipynb is the only jupyter notebook file, it contains code I used to perform EDA to understand the data more, analyze to find interesting insights, and feature engineer more features to improve the results
 
 ## Results
 ### Analytics
