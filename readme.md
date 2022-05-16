@@ -74,4 +74,4 @@ Every lead has different characteristics, where they are based, the device they 
 ### WebApp
 Fast API was used to build the backend, which takes the trained model and outputs a prediction, and streamlit was used as the frontend, to display the results in a nice UI that company leaders can use to access their leads. The
 The web app can be accessed here --> https://share.streamlit.io/joamps/lead_conversion_prediction_for_a_mobile_app_company/main/frontend-streamlit/streamlit_app.py. Ideally, it's supposed to be for only the company management to access and use it to improve their business, but since this is a personal project, any user can get access and view it.
-For developers to use and run this application at their end, the whole app is containerized using docker
+For developers to use and run this application at their end, the whole app is containerized using docker, so they can run at it at their end without erros due to different environments, packages, libraries and etc.
