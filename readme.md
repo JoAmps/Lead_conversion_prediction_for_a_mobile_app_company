@@ -47,3 +47,5 @@ Lead conversion is a crucial aspect of business, especially for app and website 
 The first and important thing was to look at the characteristics of leads that converted, 
 ![Lead country of origin](https://github.com/JoAmps/Lead_conversion_prediction_for_a_mobile_app_company/blob/main/leads_per_country.png)
 Most leads reside in the United states, with over 98% of leads, but only less than 5% of them converted, compared to the Uk which accounted for less than 1% of all leads, had the most leads converting, with around 5.27% of leads converting, which suggests leads registering in the UK are to be targeted more, since they tend to convert the most
+![Lead country of origin](https://github.com/JoAmps/Lead_conversion_prediction_for_a_mobile_app_company/blob/main/leads_per_sources.png)
+Facebook is the source that most leads redirect from, with almost half of all leads redirecting from there, but only 3.73% of leads convert from there. Medium redirection acounts for the most lead conversion with 6.76%, even though less than 1% of all leads redirect from there, so leads that redirect from medium should be given the most attention
