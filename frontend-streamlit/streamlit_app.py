@@ -13,7 +13,7 @@ def run():
     to predict which of your leads are likely to convert.
     Companies are interested in targeting these leads that are likely to
     convert. These leads can  be targeted  with special deals and
-    promotions to influence  them to stay withthe company.
+    promotions to influence  them to stay with the company.
     This app predicts if a lead would convert. Lead converting means the lead
     succesfully registered with the app
 
@@ -88,7 +88,7 @@ def run():
     }
 
     if st.button("Predict"):
-        response = requests.post("http://127.0.0.1:8000/predict", json=data)
+        response = requests.post("http://127.0.0.1:8080/predict", json=data,timeout=5)
         prediction = response.text
         st.success(f"The prediction from model: {prediction}")
 

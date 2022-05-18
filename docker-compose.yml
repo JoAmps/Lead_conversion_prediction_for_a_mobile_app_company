@@ -5,6 +5,10 @@ services:
     build: frontend-streamlit
     ports:
       - 8501:8501
+    networks: 
+      default: 
+        aliases: 
+          - frontend.docker
     depends_on:
       - backend
     volumes:
@@ -13,7 +17,36 @@ services:
   backend:
     build: .
     ports:
-      - 8000:8000
+      - 8080:8080
+    networks: 
+      default: 
+        aliases: 
+          - backend.docker  
     volumes:
         - ./app:/app
         - ./storage:/storage
+
+#version: '3'
+
+#services:
+ # fastapi:
+ #   build: .
+  #  ports:
+  #    - 8000:8000
+  #  networks:
+   #   - deploy_network
+   # container_name: fastapi
+
+  #streamlit:
+  #  build: frontend-streamlit
+  #  depends_on:
+ #     - fastapi
+ #   ports:
+ #       - 8501:8501
+ #   networks:
+ #     - deploy_network
+ #  container_name: strreamlit
+
+#networks:
+ # deploy_network:
+ #   driver: bridge
