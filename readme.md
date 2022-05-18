@@ -80,3 +80,7 @@ For developers to use and run this application at their end, the whole app is co
 
 This is just a gif of how the app looks and its functionalities,
 ![webapp gif](https://github.com/JoAmps/Lead_conversion_prediction_for_a_mobile_app_company/blob/main/sample_prediction.gif)
+
+# Conclusion
+Predicting thae leads that are likely to convert is of outmost importance to companies, and to this mobile company as well. Many leads start the process and fall by the way, so being able to identify such promising leads that have a high possibility of becoming paying customers is crucial, so certain incentives can be afforded them to help them complete the process. Peoples mind can change at any time, but with the company's intervention
+obtained from the knowledge gained from this project, of knowing those that are likely to convert, they can become paying customers to keep the business afloat and make the company profits
