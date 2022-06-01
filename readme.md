@@ -76,11 +76,14 @@ Fast API was used to build the backend, which takes the trained model and output
 The web app can be accessed here --> https://share.streamlit.io/joamps/lead_conversion_prediction_for_a_mobile_app_company/main/frontend-streamlit/streamlit_app.py. 
 Ideally, it's supposed to be for only the company management to access and use it to improve their business, but since this is a personal project, any user can get access and view it.
 For developers to use and run this application at their end, the whole app is containerized using docker, so they can run at it at their end without erros due to different environments, packages, libraries and etc.
+### First run "docker pull joamps/lead-convert:1.0.3"
+and then
+### run "docker pull joamps/leadstreamlit:0.01"
 
 
 This is just a gif of how the app looks and its functionalities,
 ![webapp gif](https://github.com/JoAmps/Lead_conversion_prediction_for_a_mobile_app_company/blob/main/sample_prediction.gif)
 
 # Conclusion
-Predicting thae leads that are likely to convert is of outmost importance to companies, and to this mobile company as well. Many leads start the process and fall by the way, so being able to identify such promising leads that have a high possibility of becoming paying customers is crucial, so certain incentives can be afforded them to help them complete the process. Peoples mind can change at any time, but with the company's intervention
+Predicting the leads that are likely to convert is of outmost importance to companies, and to this mobile company as well. Many leads start the process and fall by the way, so being able to identify such promising leads that have a high possibility of becoming paying customers is crucial, so certain incentives can be afforded them to help them complete the process. Peoples mind can change at any time, but with the company's intervention
 obtained from the knowledge gained from this project, of knowing those that are likely to convert, they can become paying customers to keep the business afloat and make the company profits
